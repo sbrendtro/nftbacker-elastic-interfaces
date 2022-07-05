@@ -1,5 +1,5 @@
 {
-  "name": "nftbacker-elastic-interfaces",
+  "name": "nftbackers-elastic-interfaces",
   "version": "1.0.0",
   "description": "Set of TypeScript interfaces and classess for NFT Backer's elasticsearch",
   "main": "dist/index.js",
@@ -10,7 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "Steven Brendtro <steven.brendtro@gmail.com>",
+  "author": "Über Steve",
   "license": "ISC",
   "devDependencies": {
     "typescript": "^4.7.4"
