@@ -7,8 +7,14 @@
   "scripts": {
     "prepublish": "npm run build",
     "build": "tsc",
-    "test": "jest --config jestconfig.json"
+    "test": "jest --config jestconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test",
+    "preversion": "npm run lint",
+    "version": "git add -A src",
+    "postversion": "git push && git push --tags"
   },
+  "files": ["dist/**/*"],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sbrendtro/nftbackers-elastic-interfaces.git"
@@ -17,7 +23,7 @@
     "url": "https://github.com/sbrendtro/nftbackers-elastic-interfaces/issues"
   },
   "homepage": "https://github.com/sbrendtro/nftbackers-elastic-interfaces#readme",
-  "keywords": [],
+  "keywords": ["NFT Backers","TypeScript","Interfaces","Elasticsearch"],
   "author": "Über Steve",
   "license": "ISC",
   "devDependencies": {
